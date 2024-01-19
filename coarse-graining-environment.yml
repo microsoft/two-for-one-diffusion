@@ -1,0 +1,33 @@
+name: coarse-graining-environment
+channels:
+  - pyg
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - cudatoolkit=11.3.1
+  - tensorboard=2.9.1
+  - mdtraj=1.9.7
+  - pip=21.2.4 # See https://github.com/Azure/MachineLearningNotebooks/issues/1110 - using this specific pip works around ruamel.yaml not found error.
+  - pyg=2.0.4
+  - python=3.8.13
+  - pytorch=1.11
+  - cudatoolkit=11.3
+  - scipy=1.7.3
+  - tqdm=4.64.0
+  - pip:
+    - accelerate==0.10.0
+    - charset-normalizer==2.1.0
+    - einops==0.4.1
+    - ema-pytorch==0.0.8
+    - numpy==1.22.3
+    - pillow==9.2.0
+    - psutil==5.9.6
+    - pyparsing==3.0.9
+    - pyyaml==6.0
+    - typing-extensions==4.3.0
+    - urllib3==1.26.10
+    - matplotlib==3.5.3
+    - deeptime==0.4.4
+    - seaborn==0.12.1
+prefix: /anaconda/envs/coarse-graining-environment
