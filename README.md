@@ -103,11 +103,6 @@ python main_train.py --help
 
 ***
 
-## License
-<span style="color: red;">**ADD LICENSE INFO!**</span>
-
-***
-
 ## Citation
 Please cite the following paper when using this code base:
 
