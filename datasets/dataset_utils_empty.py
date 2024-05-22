@@ -247,13 +247,13 @@ class CGDataset(torch.utils.data.TensorDataset):
         self.bead_onehot = torch.eye(self.num_beads)
         self.std = norm_stds[self.molecule]
 
-    def get_subset(self, ind_range, topology=None, train=True):
+    def get_subset(self, ind_range, topology=None, train=True, forces=False):
         """
         Get subset of entire dataset
         """
         subset = torch.utils.data.Subset(self.dataset, ind_range)
         subset = CGDataset(
-            subset.dataset, topology, self.molecule, self.mean0, self.atom_selection
+            subset, topology, self.molecule, self.mean0, self.atom_selection
         )
         if train:
             assert topology is not None, "Provide topology for train set"
