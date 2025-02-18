@@ -99,7 +99,7 @@ python main_train.py --help
 1. [DDPM base model](https://github.com/lucidrains/denoising-diffusion-pytorch) (PyTorch) by [Phil Wang (lucidrains)](https://github.com/lucidrains)
 2. [Graph transformer](https://github.com/lucidrains/graph-transformer-pytorch) (PyTorch) by [Phil Wang (lucidrains)](https://github.com/lucidrains)
 3. Several [plotting functions](./evaluate/evaluators_CGflowmatching.py) provided by the authors of [Flow-matching: Efficient coarse-graining of molecular dynamics without forces](https://pubs.acs.org/doi/full/10.1021/acs.jctc.3c00016).
-4. Langevin dynamics from [CGnet](https://github.com/wutianyiRosun/CGNet) (PyTorch), by the authors of [Cgnet: A light-weight context guided network for semantic segmentation](https://ieeexplore.ieee.org/document/9292449).
+4. Langevin dynamics from [CGnet](https://github.com/coarse-graining/cgnet) (PyTorch), by the authors of [Coarse graining molecular dynamics with graph neural networks](https://doi.org/10.1063/5.0026133).
 
 ***
 
